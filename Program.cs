@@ -8,8 +8,7 @@ namespace AccessSharedFolderWithCredentials
     {
         private static string networkPath { get; set; } = @"\\NMPELLIAS-PC\MyFiles";
         private static NetworkCredential credentials { get; set; } = new NetworkCredential(@"NMPELLIAS-PC\nbellias", "mypassword");
-        // CASE NO PASSWORD IS USED BY USER: = new NetworkCredential(@"NMPELLIAS-PC\nbellias", null);
-
+        
         static void Main(string[] args)
         {
             Console.WriteLine("Reading shared folder...");
